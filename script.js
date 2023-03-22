@@ -1,25 +1,23 @@
 "use strict"
 
- let incr = 10,
-     decr = 10;
+const numberOfFilms = prompt("Скільки фільмів ти переглянув?", ""),
+      lastFilmName1 = prompt("Один з останніх фільмів який ти переглянув?", ""),
+      lastFilmRating1 = prompt("Оціни цей фільм від 0.1 до 10?", ""),
+
+       lastFilmName2 = prompt("Один з останніх фільмів який ти переглянув?", ""),
+      lastFilmRating2 = prompt("Оціни цей фільм від 0.1 до 10?", "");
+
+const personalMoviDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+
+};
+
+personalMoviDB.movies[lastFilmName1]=lastFilmRating1;
+personalMoviDB.movies[lastFilmName2]=lastFilmRating2;
 
 
-// ++incr;
-// --decr;
-
-console.log(incr++);
-console.log(decr--);
-console.log(incr);
-console.log(decr);
-
-
-console.log(7%2);
-
-
-console.log((2+2)*2 != 8);
-
-
-const isChecked = false,
-      isClose = false;
-
-console.log(isChecked || !isClose);
+console.log(personalMoviDB);
