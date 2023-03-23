@@ -1,23 +1,40 @@
 "use strict"
 
-const numberOfFilms = prompt("Скільки фільмів ти переглянув?", ""),
-      lastFilmName1 = prompt("Один з останніх фільмів який ти переглянув?", ""),
-      lastFilmRating1 = prompt("Оціни цей фільм від 0.1 до 10?", ""),
-
-       lastFilmName2 = prompt("Один з останніх фільмів який ти переглянув?", ""),
-      lastFilmRating2 = prompt("Оціни цей фільм від 0.1 до 10?", "");
-
-const personalMoviDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-
-};
-
-personalMoviDB.movies[lastFilmName1]=lastFilmRating1;
-personalMoviDB.movies[lastFilmName2]=lastFilmRating2;
+ if (4==9) {
+    console.log(object);
+ } else {
+    console.log("err");
+ }
 
 
-console.log(personalMoviDB);
+ 
+
+//  if (num<49) {
+//    console.log("err");
+//  } else if (num>100) {
+//    console.log("so big");
+//  } else {
+//    console.log("ok");
+//  }
+
+ 
+
+//  (num === 50) ? console.log("ok") : console.log("err");
+
+ const num = 50;
+
+ switch (num) {
+   case 49:
+      console.log("nooooo");
+      break;
+   case 100:
+      console.log("nooooo");
+      break;
+   case 50:
+      console.log("Eba popav");
+      break;
+   default:
+      console.log("Lol");
+      break;
+
+ }
